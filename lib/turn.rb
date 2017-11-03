@@ -13,6 +13,8 @@ def turn(board)
   move = valid_move?(board, index)
   if move
     return 1
+  else
+    return "invalid"
   end
 end
 
