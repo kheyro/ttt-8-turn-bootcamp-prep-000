@@ -7,10 +7,18 @@ def display_board(board)
 end
 
 def turn(board)
-  puts "Please enter 1-9:"
-  input = gets.strip
-  input = input_to_index(input)
-  valid_move?(board, input)
+  validate = false
+  while validate == false
+    puts "Please enter 1-9:"
+    input = gets.strip
+    input = input_to_index(input)
+    if valid_move?(board, input) 
+      move(board, index)
+      validate = true
+    else
+      validate = false
+    end
+  end
 end
 
 def move(board, index, player = "X")
