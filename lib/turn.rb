@@ -7,14 +7,14 @@ def display_board(board)
 end
 
 def turn(index)
-  puts "Please enter 1-9:"
+  until index == true
+    puts "Please enter 1-9:"
+    
 end
 
 def move(board, index, player = "X")
   if valid_move?(board, index)
     board[index] =  player
-  else
-    return "invalid"
   end
 end
 
