@@ -8,7 +8,7 @@ end
 
 def turn(board)
   move = 0
-  while move > 1
+  while move > 0
     puts "Please enter 1-9:"
     index = gets.strip
     input_to_index(index)
