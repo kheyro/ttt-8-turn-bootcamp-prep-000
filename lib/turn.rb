@@ -8,14 +8,7 @@ end
 
 def turn(board)
   puts "Please enter 1-9:"
-  index = gets.strip
-  input_to_index(index)
-  move = valid_move?(board, index)
-  if move
-    return 1
-  else
-    return "invalid"
-  end
+
 end
 
 def move(board, index, player = "X")
