@@ -8,8 +8,8 @@ puts "Welcome to Tic Tac Toe!"
 display_board(board)
 
 while move == false
-  index = gets.strip
   "Please enter 1-9:"
+  index = gets.strip
   if turn(index) == 1
   else
   end
