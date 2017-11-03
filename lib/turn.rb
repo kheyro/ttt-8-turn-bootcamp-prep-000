@@ -7,7 +7,9 @@ def display_board(board)
 end
 
 def turn(board)
-  index = gets.strip
+    puts "Please enter 1-9:"
+    index = gets.strip
+    input_to_index(index)
 end
 
 def move(board, index, player = "X")
