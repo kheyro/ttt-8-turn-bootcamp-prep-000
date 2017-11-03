@@ -8,9 +8,9 @@ end
 
 def turn(board)
   puts "Please enter 1-9:"
-  index = gets.strip
+  input = gets.strip
   input_to_index(index)
-  valid_move?(board, index)
+  valid_move?(board, input)
 end
 
 def move(board, index, player = "X")
