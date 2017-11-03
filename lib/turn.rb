@@ -12,7 +12,9 @@ def turn(index)
     if valid_move?(board, index)
       return 1
     else
+      index = gets.strip
       return invalid
+    end
   end
 end
 
