@@ -13,4 +13,3 @@ end
 def input_to_index(index = -1)
   index = index.get_i - 1
 end
-  
