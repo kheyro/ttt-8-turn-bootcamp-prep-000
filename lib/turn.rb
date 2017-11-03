@@ -13,7 +13,7 @@ def turn(board)
     input = gets.strip
     input = input_to_index(input)
     if valid_move?(board, input)
-      move(board, index)
+      move(board, input)
       validate = true
     else
       validate = false
