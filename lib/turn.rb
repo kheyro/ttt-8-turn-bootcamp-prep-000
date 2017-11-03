@@ -14,6 +14,7 @@ def turn(board)
     input = input_to_index(input)
     if valid_move?(board, input)
       move(board, input)
+      display_board(board)
       validate = true
     else
       validate = false
