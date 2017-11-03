@@ -7,7 +7,7 @@ def display_board(board)
 end
 
 def turn(board)
-  move == false
+  move = false
   while move == false
     puts "Please enter 1-9:"
     index = gets.strip
