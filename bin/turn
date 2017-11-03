@@ -2,7 +2,15 @@
 require_relative '../lib/turn'
 
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+move = false
 
 puts "Welcome to Tic Tac Toe!"
 display_board(board)
-turn(board)
+
+while move == false
+  index = gets.strip
+  "Please enter 1-9:"
+  if turn(index) == 1
+  else
+  end
+end
