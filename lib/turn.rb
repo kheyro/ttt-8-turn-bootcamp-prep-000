@@ -10,10 +10,11 @@ def turn(index)
   validate = false
   until validate == true
     puts "Please enter 1-9:"
+    index = gets.strip
+    index = input_to_index(index)
     if valid_move?(board, index)
       return 1
     else
-      index = gets.strip
       return invalid
     end
   end
