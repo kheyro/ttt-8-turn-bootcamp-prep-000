@@ -6,16 +6,15 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-def turn(board, index, player)
-  validate = false
-  until validate == true
-    puts "Please enter 1-9:"
+def turn(board)
+  while move == false
+    "Please enter 1-9:"
     index = gets.strip
-    index = input_to_index(index)
+    input_to_index(index)
     if valid_move?(board, index)
-      return 1
+      move = true
     else
-      return invalid
+      move = false
     end
   end
 end
