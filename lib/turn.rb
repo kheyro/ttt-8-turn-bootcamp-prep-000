@@ -6,7 +6,7 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-def turn(index)
+def turn(board, index, player)
   validate = false
   until validate == true
     puts "Please enter 1-9:"
