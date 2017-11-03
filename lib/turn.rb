@@ -7,7 +7,8 @@ def display_board(board)
 end
 
 def turn(index)
-  until index == true
+  validate = false
+  until validate == true
     puts "Please enter 1-9:"
     if valid_move?(board, index)
       return 1
