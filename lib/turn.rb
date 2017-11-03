@@ -9,7 +9,11 @@ end
 def turn(index)
   until index == true
     puts "Please enter 1-9:"
-    
+    if valid_move?(board, index)
+      return 1
+    else
+      return invalid
+  end
 end
 
 def move(board, index, player = "X")
